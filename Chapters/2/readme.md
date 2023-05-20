@@ -1,4 +1,6 @@
 # Chapter 2: File Creation and Manipulation
+
+
 This chapter focuses on creating and manipulating files using Bash scripting.
 
 Touch command: It creates empty files. For example, touch file.txt creates a file named "file.txt".

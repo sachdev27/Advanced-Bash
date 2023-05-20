@@ -1,5 +1,5 @@
 # Bash Scripting 
-This tutorial aims to provide a comprehensive guide to Bash scripting, covering various aspects and techniques. The tutorial is divided into the following chapters:
+This repo aims to provide a comprehensive guide to Bash scripting, covering various aspects and techniques. The tutorial is divided into the following chapters:
 
 ## Chapter 1: Expansions
 This chapter introduces Bash script expansions, which are handy shortcuts. It covers tilde expansion, which represents the user's home directory and the previous directory visited. It also discusses brace expansion, which allows for repeated commands with different terms or interpolation within a range.
