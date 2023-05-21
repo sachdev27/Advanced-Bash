@@ -105,3 +105,44 @@ ls -l | more # More is a program that allows you to scroll through the output of
 ls -l | less # Less is a program that allows you to scroll through the output of a command.
 ```
 
+## Playin with Permissions
+
+```bash
+chmod 000 *001* # Removes all permissions from all files containing "001".
+```
+
+```bash
+chmod 777 *001* # Gives all permissions to all files containing "001".
+```
+
+```bash
+cp -v * ../ # Copies all files in the current directory to the parent directory.
+output : Permission denied # If you don't have permission to copy a file, you will get an error. as done in the above command.
+
+# -v flag is used to display the progress of the copy operation.
+```
+
+### Saving the output of a command to a file
+
+```bash
+cp -v * ../otherfolder 1>../success.txt 2> ../error.txt # Saves the output of the cp command to a file named "success.txt" and the error to a file named "error.txt".
+```
+
+```bash
+cp -v * ../otherfolder &> ../output.txt # Saves the output of the cp command to a file named "output.txt".
+```
+
+```bash
+cp -v * ../otherfolder &>> ../output.txt # Appends the output of the cp command to a file named "output.txt".
+```
+
+### Output to Sink
+
+```bash
+ls /dev/null # /dev/null is a special file that discards all data written to it.
+```
+
+```bash
+cp -v * ../otherfolder 1>/dev/null 2>/dev/null # Discards the output of the cp command.
+```
+
